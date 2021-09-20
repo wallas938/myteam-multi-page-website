@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+// For responsive
+
+.hide-for-mobile {
+    @include breakpoint-down($tablet-down) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up($tablet-up) {
+        display: none;
+    }
+}
+
+.show-flex {
+    display: flex;
+}
+
+.show-block {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
