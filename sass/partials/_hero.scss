@@ -1,0 +1,117 @@
+@import '../colors';
+@import '../variables';
+
+#hero {
+    background-color: $midnight-green;
+    position: relative;
+    padding: 5.333333rem 1.6rem 13.133333rem 1.6rem;
+
+    .bg-pattern-2 {
+        position: absolute;
+        bottom: 0;
+        transform: translateX(50%);
+        right: 50%;
+        width: auto;
+    }
+
+    .hero__container {
+
+        h1,
+        p {
+            color: #FFF;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 800;
+            padding: 0 2.7rem;
+            font-size: 2.666666rem;
+            margin-bottom: 1.2rem;
+
+            &>span {
+                color: $light-coral;
+            }
+        }
+
+        p {
+            line-height: 1.866666rem;
+            font-weight: 600;
+        }
+    }
+
+}
+
+@media screen and (min-width: $tablet-min) {
+    #hero {
+        padding: 5.333333rem 1.6rem 17.066666rem 1.6rem;
+
+        h1 {
+            padding: 0 11rem;
+            font-size: 4.266666rem;
+            margin-bottom: 1.6rem;
+        }
+
+        p {
+            padding: 0 7rem;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-min) {
+    #hero {
+        padding: 8.6rem 11rem 16.666666rem 11rem;
+
+        .bg-pattern-1 {
+            // finir
+            position: absolute;
+            left: -6.666666rem;
+            width: auto;
+        }
+
+        .bg-pattern-2 {
+            position: absolute;
+            bottom: 0;
+            transform: unset;
+            right: 11rem;
+            width: auto;
+        }
+
+        .hero__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: last baseline;
+
+            h1,
+            p {
+                text-align: left;
+            }
+
+            h1 {
+                flex: 1;
+                line-height: 6.666666rem;
+                padding: unset;
+                padding-right: 3rem;
+                margin-bottom: unset;
+                font-size: 6.666666rem;
+            }
+
+            p {
+                padding: unset;
+                width: 29.666666rem;
+                font-size: 1.2rem;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 3.333333rem;
+                    height: 0.266666rem;
+                    top: -5.533333rem;
+                    left: 0;
+                    background-color: $rapture-blue;
+                }
+            }
+        }
+
+    }
+}

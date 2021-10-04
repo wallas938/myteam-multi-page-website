@@ -1,4 +1,31 @@
+@import "./variables";
+
 html {
     font-family: 'Livvic', sans-serif;
     font-size: 15px;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 38.4rem; // 576px
+    margin: 0 auto;
+}
+
+@media screen and (min-width: $tablet-min) {
+    
+    .container {
+        max-width: 66.133333rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: $desktop-min) {
+    
+    .container {
+        max-width: 85.333333rem; // 1280px;
+        margin: 0 auto;
+    }
 }

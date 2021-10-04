@@ -1,0 +1,64 @@
+@import '../colors';
+@import '../variables';
+
+#contact {
+    background-color: $light-coral;
+    padding: 5.533333rem 1.6rem;
+    position: relative;
+    z-index: 0;
+    overflow-y: hidden;
+
+    .bg-pattern-6 {
+        position: absolute;
+        width: auto;
+        bottom: -1.5rem;
+        left: 0;
+        z-index: -1;
+    }
+
+    .contact__container {
+        text-align: center;
+
+        h2 {
+            font-size: 2.133333rem;
+            font-weight: 700;
+            margin-bottom: 1.6rem;
+        }
+
+        button {
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 28px;
+            border-radius: 1.6rem;
+            border: 2px solid black;
+            background-color: transparent;
+            padding: 0.6rem 2.2rem 0.733333rem 2.133333rem;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-min) {
+    #contact {
+        padding: 5.066666rem 6.466666rem;
+
+        .contact__container {
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            h2 {
+                margin-bottom: unset;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-min) {
+    #contact {
+        padding: 5.066666rem 17.333333rem;
+
+        h2 {
+            font-size: 3.2rem !important; // 48px
+        }
+    }
+}

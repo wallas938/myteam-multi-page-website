@@ -4,13 +4,25 @@
 // For responsive
 
 .hide-for-mobile {
-    @include breakpoint-down($tablet-down) {
+    @include breakpoint-up($mobile-min, $mobile-max) { // 375px => 767px
+        display: none;
+    }
+}
+
+.hide-for-tablet {
+    @include breakpoint-up($tablet-min, $tablet-max) { // 768px => 1439px
         display: none;
     }
 }
 
 .hide-for-desktop {
-    @include breakpoint-up($tablet-up) {
+    @include breakpoint-down($desktop-min, $desktop-max) { // 1440px => 2440px
+        display: none;
+    }
+}
+
+.hide-for-tablet-and-desktop {
+    @include breakpoint-up($tablet-min, $desktop-max) { // 375px => 767px
         display: none;
     }
 }

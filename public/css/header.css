@@ -1,0 +1,114 @@
+/* Devices sizes */
+/* Layout values */
+header {
+  background-color: #014E56;
+  padding: 3.2rem 1.6rem 0 1.6rem;
+}
+
+header nav {
+  max-width: 38.4rem;
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul li.logo {
+  width: 8.533333rem;
+  height: 2.133333rem;
+}
+
+header nav ul li.icon-humberger {
+  width: 1.333333rem;
+  height: 1.133333rem;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 4.266666rem 2.666666rem 0 2.666666rem;
+  }
+  header nav {
+    max-width: 66.133333rem;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav li,
+  header nav button {
+    color: #FFF;
+  }
+  header nav ul li.logo {
+    margin-right: 3.2rem;
+  }
+  header nav li.home {
+    margin-right: 2.666666rem;
+  }
+  header nav li.about {
+    margin-right: 14.666666rem;
+  }
+  header nav li.contact-us > button {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    font-weight: 600;
+    border-radius: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 28px;
+    padding: 0.6rem 2.133333rem 0.733333rem 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 4.866666rem 11rem 0 11rem !important;
+  }
+  header nav {
+    max-width: 85.333333rem;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav ul li.logo {
+    width: 10.666666rem;
+    height: 2.666666rem;
+    margin-right: 5.333333rem;
+  }
+  header nav li.home {
+    margin-right: 2.666666rem;
+  }
+  header nav li.about {
+    margin-right: 38.466666rem;
+  }
+  header nav * li.contact-us {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  header nav li.contact-us > button {
+    background-color: transparent;
+    border: 2px solid #FFF;
+    font-weight: 600;
+    border-radius: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 28px;
+    padding: 0.6rem 2.133333rem 0.733333rem 2.2rem;
+  }
+}
+/*# sourceMappingURL=header.css.map */

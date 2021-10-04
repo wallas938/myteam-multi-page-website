@@ -1,0 +1,112 @@
+@import '../colors';
+@import '../variables';
+
+header {
+    background-color: $midnight-green;
+    padding: 3.2rem 1.6rem 0 1.6rem;
+
+    nav {
+        max-width: 38.4rem; // 576px
+        margin: 0 auto;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul li.logo {
+            width: 8.533333rem; // 128px;
+            height: 2.133333rem; // 32px
+        }
+
+        ul li.icon-humberger {
+            width: 1.333333rem; // 20px;
+            height: 1.133333rem; // 17px
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-min) {
+    header {
+        padding: 4.266666rem 2.666666rem 0 2.666666rem;
+
+        nav {
+            max-width: 66.133333rem;
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            li,
+            button {
+                color: #FFF;
+            }
+
+            ul li.logo {
+                margin-right: 3.2rem;
+            }
+
+            li.home {
+                margin-right: 2.666666rem;
+            }
+
+            li.about {
+                margin-right: 14.666666rem;
+            }
+
+            li.contact-us>button {
+                background-color: transparent;
+                border: 2px solid #FFF;
+                font-weight: 600;
+                border-radius: 1.6rem;
+                font-size: 1.2rem;
+                line-height: 28px;
+                padding: 0.6rem 2.133333rem 0.733333rem 2.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-min) {
+    header {
+        padding: 4.866666rem 11rem 0 11rem !important;
+
+        nav {
+            max-width: 85.333333rem;
+            ul {
+                display: flex;
+            }
+
+            ul li.logo {
+                width: 10.666666rem; // 160px;
+                height: 2.666666rem; // 40px;
+                margin-right: 5.333333rem; // 80px
+            }
+
+            li.home {
+                margin-right: 2.666666rem;
+            }
+
+            li.about {
+                margin-right: 38.466666rem;
+            }
+
+            * li.contact-us {
+                align-self: flex-end;
+            }
+
+            li.contact-us>button {
+                background-color: transparent;
+                border: 2px solid #FFF;
+                font-weight: 600;
+                border-radius: 1.6rem;
+                font-size: 1.2rem;
+                line-height: 28px;
+                padding: 0.6rem 2.133333rem 0.733333rem 2.2rem;
+            }
+
+            //// !!!!!! Faire vrai header responsive.. ////
+        }
+    }
+}

@@ -4,3 +4,13 @@
 @import 'sass/helpers';
 @import 'sass/colors';
 @import 'sass/global';
+
+// Shared
+@import 'sass/shared/header';
+@import 'sass/shared/footer';
+
+// Partials
+@import 'sass/partials/hero';
+@import 'sass/partials/features';
+@import 'sass/partials/stories';
+@import 'sass/partials/contact';

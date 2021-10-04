@@ -1,5 +1,10 @@
-/* Layout */
-$mobile: 375px; // PX
-$tablet-down: 768px; // PX
-$tablet-up: 767px; // PX
-$desktop: 1440px; // PX
+/* Devices sizes */
+$mobile-min: 0px; // PX
+$mobile-max: 767px; // PX
+$tablet-min: 768px; // PX
+$tablet-max: 1439px; // PX
+$desktop-min: 1440px; // PX
+$desktop-max: 4440px; // PX
+
+
+/* Layout values */

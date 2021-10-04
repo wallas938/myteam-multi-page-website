@@ -1,0 +1,188 @@
+footer {
+    color: #fff;
+    background-color: $dark-green;
+    padding: 4.4rem 1.6rem 4.266666rem 1.6rem;
+
+    .footer__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "logo"
+            "links"
+            "address"
+            "socials"
+            "copyright";
+
+        &>img {
+            grid-area: logo;
+            width: 6.4rem; //96px
+            height: 1.6rem; //24px
+            margin: 0 auto;
+            margin-bottom: 1.6rem;
+        }
+
+        .links {
+            grid-area: links;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.6rem;
+        }
+
+        .links li {
+            font-weight: 600;
+        }
+
+        .links li:first-child {
+            margin-right: 1.6rem;
+        }
+
+        address {
+            grid-area: address;
+            text-align: center;
+            margin-bottom: 2.666666rem;
+        }
+
+        address p {
+            font-style: normal;
+            opacity: 0.6;
+        }
+
+        address>p:not(:nth-child(4)) {
+            margin-bottom: 1rem;
+        }
+
+        .socials {
+            grid-area: socials;
+            text-align: center;
+        }
+
+        .socials img {
+            margin-bottom: 1.066666rem;
+        }
+
+        .socials img:not(.socials img:last-child) {
+            width: 1.6rem;
+            margin-right: 1.066666rem;
+        }
+
+        .copyright {
+            grid-area: copyright;
+            text-align: center;
+        }
+    }
+
+
+
+}
+
+@media screen and (min-width: $tablet-min) {
+    footer {
+        padding: 3.733333rem 2.666666rem;
+
+        .footer__container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas:
+                "logo address"
+                "links address"
+                "socials copyright";
+
+            &>img {
+                grid-area: logo;
+                margin: 0 0 3.533333rem 0;
+            }
+
+            .links {
+                grid-area: links;
+                justify-content: flex-start;
+                margin-bottom: 2.133333rem;
+            }
+
+            .links li:first-child {
+                margin-right: 1.6rem;
+            }
+
+            address {
+                grid-area: address;
+                text-align: right;
+                margin-bottom: 2.266666rem;
+            }
+
+            .socials {
+                grid-area: socials;
+                text-align: left;
+            }
+
+            .socials img {
+                margin-bottom: unset;
+            }
+
+            .copyright {
+                grid-area: copyright;
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-min) {
+    footer {
+        padding: 3.2rem 11rem;
+
+        .footer__container {
+            grid-template-columns: 19rem 38rem auto;
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas:
+                "logo address socials"
+                "links address copyright";
+
+            &>img {
+                grid-area: logo;
+                margin-bottom: 1.666666rem;  // 25px
+                width: 10.666666rem;
+                height: 2.666666rem;
+            }
+
+            .links {
+                grid-area: links;
+                justify-content: flex-start;
+                margin-bottom: unset;
+                width: fit-content;
+            }
+
+            .links li {
+                font-size: 1.2rem;
+            }
+
+            .links li:first-child {
+                margin-right: 2.666666rem;
+            }
+
+            address {
+                grid-area: address;
+                text-align: left;
+                margin-bottom: unset;
+            }
+
+            address>p:not(:nth-child(4)) {
+                margin-bottom: 0.866666rem;
+            }
+
+            .socials {
+                grid-area: socials;
+                text-align: right;
+            }
+
+            .socials img {
+                margin-bottom: unset;
+            }
+
+            .copyright {
+                grid-area: copyright;
+                text-align: right;
+                align-self: flex-end;
+            }
+        }
+    }
+}

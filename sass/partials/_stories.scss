@@ -1,0 +1,137 @@
+@import '../colors';
+@import '../variables';
+
+#stories {
+    padding: 9.333333rem 1.6rem 10.933333rem 1.6rem;
+    background-color: $midnight-green;
+    position: relative;
+
+    img.bg-square,
+    img.bg-circle {
+        width: auto;
+        position: absolute;
+    }
+
+    img.bg-square {
+        top: 0;
+        left: 0;
+    }
+
+    img.bg-circle {
+        bottom: 0;
+        right: 0;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 2.133333rem; // 32px
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 5.6rem; // 84px
+
+        &>span.succes {
+            color: $rapture-blue;
+        }
+    }
+
+    .stories-list {
+
+        .story {
+            position: relative;
+            z-index: 1;
+        }
+
+        .story>img.icon-quotes {
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            top: -2.4rem;
+            z-index: -1;
+            width: auto;
+        }
+
+        .story>p {
+            color: #fff;
+            text-align: center;
+        }
+
+        .story>p.testimonial {
+            line-height: 1.666666rem;
+            margin-bottom: 1.066666rem;
+        }
+
+        .story>p.name {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: $rapture-blue;
+            margin-bottom: 0.133333rem;
+        }
+
+        .story>p.position {
+            margin-bottom: 1.066666rem;
+            font-size: 0.866666rem;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .story>img:not(.icon-quotes) {
+            width: 4.133333rem; // 62px
+            border-radius: 100%;
+            margin: 0 auto;
+            display: block;
+            border: 2px solid #C4FFFE;
+        }
+
+        .story:not(.story:last-child) {
+            margin-bottom: 5.6rem;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-min) {
+    #stories {
+        padding: 6.666666rem 6.466666rem;
+
+        h2 {
+            font-size: 2.133333rem; // 32px
+            padding: 0 3rem;
+        }
+
+        .stories-list {
+
+            .story>p.testimonial {
+                padding: 0 0.3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-min) {
+    #stories {
+        padding: 9.333333rem 11rem;
+
+        h2 {
+            font-size: 3.2rem; // 48px
+            padding: 0 5.5rem;
+            margin-bottom: 6.133333rem;
+        }
+
+        .stories-list {
+            display: flex;
+            justify-content: space-between;
+
+            .story {
+                margin-bottom: unset;
+                padding: 0 1rem;
+            }
+
+            .story>p.testimonial {
+                margin-bottom: 1.6rem;
+            }
+
+            .story>p.position {
+                margin-bottom: 2.133333rem;
+            }
+        }
+    }
+}
