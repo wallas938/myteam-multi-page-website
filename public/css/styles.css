@@ -558,6 +558,7 @@ footer .footer__container .copyright {
   padding: 6.666666rem 1.6rem 4.266666rem 1.6rem;
   background-color: #012F34;
   position: relative;
+  overflow-x: clip;
 }
 
 #features .bg-pattern-3 {
