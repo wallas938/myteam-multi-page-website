@@ -1,0 +1,360 @@
+#directores {
+    overflow: clip;
+    position: relative;
+    background-color: $deep-jungle-green;
+    padding: 5.866666rem 1.6rem 7.733333rem 1.6rem;
+
+    .bg-pattern-about-2 {
+        position: absolute;
+        top: -6.666666rem;
+        left: -6.666666rem;
+        width: auto;
+    }
+
+    .bg-pattern-about-3 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: auto;
+    }
+
+    h2,
+    p {
+        text-align: center;
+        color: #FFF;
+    }
+
+    h2 {
+        font-size: 2.133333rem;
+        font-weight: 700;
+        margin-bottom: 3.2rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 3.466666rem;
+        grid-template-areas: "nikita"
+            "cristian"
+            "cruz"
+            "drake"
+            "griffin"
+            "aden";
+
+        .card {
+            padding: 2.133333rem 1.6rem 3.733333rem 1.6rem;
+            background-color: $sacramento-state-green;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card>img:not(.social-icon) {
+            width: 6.4rem;
+            border: 2px solid #C4FFFE;
+            border-radius: 100%;
+            margin-bottom: 1.066666rem;
+        }
+
+        .card>.name {
+            color: $rapture-blue;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.45rem;
+        }
+
+        .card>.position {
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .card>button {
+            position: absolute;
+            width: 3.733333rem;
+            height: 3.733333rem;
+            background-color: $light-coral;
+            border-radius: 100%;
+            border: transparent;
+            bottom: -1.866666rem;
+        }
+
+        .card>button>img {
+            width: auto;
+        }
+
+        .card.aden>button {
+            transform: rotateZ(45deg);
+
+        }
+
+        .card.nikita {
+            grid-area: nikita;
+        }
+
+        .card.cristian {
+            grid-area: cristian;
+        }
+
+        .card.cruz {
+            grid-area: cruz;
+        }
+
+        .card.drake {
+            grid-area: drake;
+        }
+
+        .card.griffin {
+            grid-area: griffin;
+        }
+
+        .card.aden {
+            grid-area: aden;
+        }
+
+        .card.aden>button {
+            background-color: $rapture-blue;
+        }
+
+        .card.aden>p.name {
+            margin-bottom: 0.533333rem;
+        }
+
+        .card.aden>p.testimonial {
+            line-height: 1.666666rem;
+            font-weight: 600;
+            padding: 0 1rem;
+            margin-bottom: 1.6rem;
+        }
+
+        .card.aden>.social-cta>img {
+            width: auto;
+        }
+
+        .card.aden>.social-cta>img:first-child {
+            margin-right: 1.066666rem;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-min) {
+    #directores {
+        padding: 6.666666rem 6.533333rem 8.533333rem 6.533333rem;
+
+        .bg-pattern-about-2 {
+            top: 0rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, auto);
+            column-gap: 0.733333rem;
+            row-gap: 3.466666rem;
+            grid-template-areas:
+                "nikita cristian"
+                "cruz drake"
+                "griffin aden";
+
+
+            .card>img:not(.social-icon) {
+                width: 6.4rem;
+                border: 2px solid #C4FFFE;
+                border-radius: 100%;
+                margin-bottom: 1.066666rem;
+            }
+
+            .card>.position {
+                font-weight: 500;
+                font-style: italic;
+            }
+
+            .card>button {
+                position: absolute;
+                width: 3.733333rem;
+                height: 3.733333rem;
+                background-color: $light-coral;
+                border-radius: 100%;
+                border: transparent;
+                bottom: -1.866666rem;
+            }
+
+            .card>button>img {
+                width: auto;
+            }
+
+            .card.aden>button {
+                transform: unset;
+            }
+
+            .card.griffin>button {
+                transform: rotateZ(45deg);
+            }
+
+            .card.nikita {
+                grid-area: nikita;
+            }
+
+            .card.cristian {
+                grid-area: cristian;
+            }
+
+            .card.cruz {
+                grid-area: cruz;
+            }
+
+            .card.drake {
+                grid-area: drake;
+            }
+
+            .card.griffin {
+                grid-area: griffin;
+                padding: 2.333333rem 1.6rem 4.2rem 1.6rem;
+            }
+
+            .card.griffin {
+                grid-area: griffin;
+            }
+
+            .card.griffin>button {
+                background-color: $rapture-blue;
+            }
+
+            .card.griffin>p.name {
+                margin-bottom: 0.533333rem;
+            }
+
+            .card.griffin>p.testimonial {
+                line-height: 1.666666rem;
+                font-weight: 600;
+                padding: 0 .333333rem;
+                margin-bottom: 1.6rem;
+            }
+
+            .card.griffin>.social-cta>img {
+                width: auto;
+            }
+
+            .card.griffin>.social-cta>img:first-child {
+                margin-right: 1.066666rem;
+            }
+
+            .card.aden>button {
+                background-color: $light-coral;
+                ;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: $desktop-min) {
+    #directores {
+        padding: 9.333333rem 11rem 11.2rem 11rem;
+
+        .bg-pattern-about-2 {
+            top: 0rem;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+            margin-bottom: 4.266666rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            column-gap: 2rem;
+            row-gap: 5.066666rem;
+            grid-template-areas:
+                "nikita cristian cruz"
+                "drake  griffin  aden";
+
+            .card>.name {
+                margin-bottom: 0.5rem;
+            }
+
+            .card>.position {
+                font-weight: 500;
+                font-style: italic;
+            }
+
+            .card>button {
+                position: absolute;
+                width: 3.733333rem;
+                height: 3.733333rem;
+                background-color: $light-coral;
+                border-radius: 100%;
+                border: transparent;
+                bottom: -1.866666rem;
+            }
+
+            .card>button>img {
+                width: auto;
+            }
+
+            .card.aden>button {
+                transform: rotateZ(45deg);
+            }
+
+            .card.aden>button {
+                background-color: $rapture-blue;
+            }
+
+            .card.griffin>button {
+                transform: unset;
+            }
+
+            .card.nikita {
+                grid-area: nikita;
+            }
+
+            .card.cristian {
+                grid-area: cristian;
+            }
+
+            .card.cruz {
+                grid-area: cruz;
+            }
+
+            .card.drake {
+                grid-area: drake;
+            }
+
+            .card.griffin {
+                grid-area: griffin;
+                padding: 2.333333rem 1.6rem 4.2rem 1.6rem;
+            }
+
+            .card.griffin {
+                grid-area: griffin;
+            }
+
+            .card.griffin>button {
+                background-color: $light-coral;
+            }
+
+            .card.griffin>p.name {
+                margin-bottom: 0.533333rem;
+            }
+
+            .card.aden>p.testimonial {
+                line-height: 1.666666rem;
+                font-weight: 600;
+                padding: 0 1.5rem;
+                margin-bottom: 1.6rem;
+            }
+
+            .card.griffin>.social-cta>img {
+                width: auto;
+            }
+
+            .card.griffin>.social-cta>img:first-child {
+                margin-right: 1.066666rem;
+            }
+        }
+    }
+}

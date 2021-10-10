@@ -8,9 +8,14 @@
 // Shared
 @import 'sass/shared/header';
 @import 'sass/shared/footer';
+@import 'sass/shared/get-started';
 
-// Partials
-@import 'sass/partials/hero';
-@import 'sass/partials/features';
-@import 'sass/partials/stories';
-@import 'sass/partials/contact';
+// Index Partials 
+@import 'sass/partials/index/hero';
+@import 'sass/partials/index/features';
+@import 'sass/partials/index/stories';
+
+// About Partials 
+@import 'sass/partials/about/about';
+@import 'sass/partials/about/directores';
+@import 'sass/partials/about/clients';

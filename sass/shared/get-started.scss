@@ -1,7 +1,7 @@
 @import '../colors';
 @import '../variables';
 
-#contact {
+#get-started {
     background-color: $light-coral;
     padding: 5.533333rem 1.6rem;
     position: relative;
@@ -16,7 +16,7 @@
         z-index: -1;
     }
 
-    .contact__container {
+    .get-started__container {
         text-align: center;
 
         h2 {
@@ -38,14 +38,15 @@
 }
 
 @media screen and (min-width: $tablet-min) {
-    #contact {
+    #get-started {
         padding: 5.066666rem 6.466666rem;
 
-        .contact__container {
+        .get-started__container {
             text-align: left;
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+
             h2 {
                 margin-bottom: unset;
             }
@@ -54,7 +55,7 @@
 }
 
 @media screen and (min-width: $desktop-min) {
-    #contact {
+    #get-started {
         padding: 5.066666rem 17.333333rem;
 
         h2 {

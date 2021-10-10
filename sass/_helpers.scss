@@ -5,19 +5,19 @@
 
 .hide-for-mobile {
     @include breakpoint-up($mobile-min, $mobile-max) { // 375px => 767px
-        display: none;
+        display: none !important;
     }
 }
 
 .hide-for-tablet {
     @include breakpoint-up($tablet-min, $tablet-max) { // 768px => 1439px
-        display: none;
+        display: none !important;
     }
 }
 
 .hide-for-desktop {
-    @include breakpoint-down($desktop-min, $desktop-max) { // 1440px => 2440px
-        display: none;
+    @include breakpoint-up($desktop-min, $desktop-max) { // 1440px => 2440px
+        display: none !important;
     }
 }
 

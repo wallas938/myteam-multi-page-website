@@ -54,19 +54,19 @@ select:focus {
 /* Layout values */
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .hide-for-mobile {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .hide-for-tablet {
-    display: none;
+    display: none !important;
   }
 }
 
-@media screen and (max-width: 1440px) and (min-width: 4440px) {
+@media screen and (min-width: 1440px) and (max-width: 4440px) {
   .hide-for-desktop {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -234,6 +234,8 @@ header nav ul li.icon-humberger {
   }
 }
 
+/* Devices sizes */
+/* Layout values */
 footer {
   color: #fff;
   background-color: #002529;
@@ -439,6 +441,74 @@ footer .footer__container .copyright {
     text-align: right;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+}
+
+/* Devices sizes */
+/* Layout values */
+#get-started {
+  background-color: #F67E7E;
+  padding: 5.533333rem 1.6rem;
+  position: relative;
+  z-index: 0;
+  overflow-y: hidden;
+}
+
+#get-started .bg-pattern-6 {
+  position: absolute;
+  width: auto;
+  bottom: -1.5rem;
+  left: 0;
+  z-index: -1;
+}
+
+#get-started .get-started__container {
+  text-align: center;
+}
+
+#get-started .get-started__container h2 {
+  font-size: 2.133333rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+#get-started .get-started__container button {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 28px;
+  border-radius: 1.6rem;
+  border: 2px solid black;
+  background-color: transparent;
+  padding: 0.6rem 2.2rem 0.733333rem 2.133333rem;
+}
+
+@media screen and (min-width: 768px) {
+  #get-started {
+    padding: 5.066666rem 6.466666rem;
+  }
+  #get-started .get-started__container {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  #get-started .get-started__container h2 {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #get-started {
+    padding: 5.066666rem 17.333333rem;
+  }
+  #get-started h2 {
+    font-size: 3.2rem !important;
   }
 }
 
@@ -838,71 +908,603 @@ footer .footer__container .copyright {
   }
 }
 
-/* Devices sizes */
-/* Layout values */
-#contact {
-  background-color: #F67E7E;
-  padding: 5.533333rem 1.6rem;
+#about__hero {
+  background-color: #014E56;
   position: relative;
-  z-index: 0;
-  overflow-y: hidden;
+  padding: 5.333333rem 1.6rem 7.2rem 1.6rem;
+  overflow: clip;
 }
 
-#contact .bg-pattern-6 {
+#about__hero .bg-pattern-about-1 {
   position: absolute;
+  bottom: -6.666666rem;
+  right: -6.666666rem;
   width: auto;
-  bottom: -1.5rem;
-  left: 0;
-  z-index: -1;
 }
 
-#contact .contact__container {
+#about__hero h1,
+#about__hero p {
+  color: #FFF;
   text-align: center;
 }
 
-#contact .contact__container h2 {
-  font-size: 2.133333rem;
+#about__hero h1 {
+  margin-bottom: 1.066666rem;
   font-weight: 700;
-  margin-bottom: 1.6rem;
+  font-size: 2.666666rem;
 }
 
-#contact .contact__container button {
+#about__hero p {
+  line-height: 1.866666rem;
   font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 28px;
-  border-radius: 1.6rem;
-  border: 2px solid black;
-  background-color: transparent;
-  padding: 0.6rem 2.2rem 0.733333rem 2.133333rem;
 }
 
 @media screen and (min-width: 768px) {
-  #contact {
-    padding: 5.066666rem 6.466666rem;
+  #about__hero {
+    padding: 7.466666rem 2.666666rem 7.2rem 2.666666rem;
   }
-  #contact .contact__container {
-    text-align: left;
+  #about__hero .bg-pattern-about-1 {
+    bottom: 0rem;
+  }
+  #about__hero h1 {
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+    font-size: 4.266666rem;
+  }
+  #about__hero p {
+    line-height: 1.866666rem;
+    padding: 0 8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #about__hero {
+    padding: 8rem 11rem;
+  }
+  #about__hero .about__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
-  #contact .contact__container h2 {
-    margin-bottom: unset;
+  #about__hero h1,
+  #about__hero p {
+    text-align: left;
+  }
+  #about__hero h1 {
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+    font-size: 4.266666rem;
+  }
+  #about__hero p {
+    position: relative;
+    width: 48.666666rem;
+    padding: 2.666666rem 0 0 0;
+    font-size: 1.2rem;
+  }
+  #about__hero p::before {
+    position: absolute;
+    content: "";
+    width: 3.333333rem;
+    height: 0.266666rem;
+    top: 0;
+    left: 0;
+    background-color: #F67E7E;
+  }
+}
+
+#directores {
+  overflow: clip;
+  position: relative;
+  background-color: #004047;
+  padding: 5.866666rem 1.6rem 7.733333rem 1.6rem;
+}
+
+#directores .bg-pattern-about-2 {
+  position: absolute;
+  top: -6.666666rem;
+  left: -6.666666rem;
+  width: auto;
+}
+
+#directores .bg-pattern-about-3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: auto;
+}
+
+#directores h2,
+#directores p {
+  text-align: center;
+  color: #FFF;
+}
+
+#directores h2 {
+  font-size: 2.133333rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+#directores .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
+  gap: 3.466666rem;
+      grid-template-areas: "nikita" "cristian" "cruz" "drake" "griffin" "aden";
+}
+
+#directores .cards .card {
+  padding: 2.133333rem 1.6rem 3.733333rem 1.6rem;
+  background-color: #012F34;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#directores .cards .card > img:not(.social-icon) {
+  width: 6.4rem;
+  border: 2px solid #C4FFFE;
+  border-radius: 100%;
+  margin-bottom: 1.066666rem;
+}
+
+#directores .cards .card > .name {
+  color: #79C8C7;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+}
+
+#directores .cards .card > .position {
+  font-weight: 500;
+  font-style: italic;
+}
+
+#directores .cards .card > button {
+  position: absolute;
+  width: 3.733333rem;
+  height: 3.733333rem;
+  background-color: #F67E7E;
+  border-radius: 100%;
+  border: transparent;
+  bottom: -1.866666rem;
+}
+
+#directores .cards .card > button > img {
+  width: auto;
+}
+
+#directores .cards .card.aden > button {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+#directores .cards .card.nikita {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nikita;
+}
+
+#directores .cards .card.cristian {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cristian;
+}
+
+#directores .cards .card.cruz {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cruz;
+}
+
+#directores .cards .card.drake {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: drake;
+}
+
+#directores .cards .card.griffin {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: griffin;
+}
+
+#directores .cards .card.aden {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: aden;
+}
+
+#directores .cards .card.aden > button {
+  background-color: #79C8C7;
+}
+
+#directores .cards .card.aden > p.name {
+  margin-bottom: 0.533333rem;
+}
+
+#directores .cards .card.aden > p.testimonial {
+  line-height: 1.666666rem;
+  font-weight: 600;
+  padding: 0 1rem;
+  margin-bottom: 1.6rem;
+}
+
+#directores .cards .card.aden > .social-cta > img {
+  width: auto;
+}
+
+#directores .cards .card.aden > .social-cta > img:first-child {
+  margin-right: 1.066666rem;
+}
+
+@media screen and (min-width: 768px) {
+  #directores {
+    padding: 6.666666rem 6.533333rem 8.533333rem 6.533333rem;
+  }
+  #directores .bg-pattern-about-2 {
+    top: 0rem;
+  }
+  #directores .cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    -webkit-column-gap: 0.733333rem;
+            column-gap: 0.733333rem;
+    row-gap: 3.466666rem;
+        grid-template-areas: "nikita cristian" "cruz drake" "griffin aden";
+  }
+  #directores .cards .card > img:not(.social-icon) {
+    width: 6.4rem;
+    border: 2px solid #C4FFFE;
+    border-radius: 100%;
+    margin-bottom: 1.066666rem;
+  }
+  #directores .cards .card > .position {
+    font-weight: 500;
+    font-style: italic;
+  }
+  #directores .cards .card > button {
+    position: absolute;
+    width: 3.733333rem;
+    height: 3.733333rem;
+    background-color: #F67E7E;
+    border-radius: 100%;
+    border: transparent;
+    bottom: -1.866666rem;
+  }
+  #directores .cards .card > button > img {
+    width: auto;
+  }
+  #directores .cards .card.aden > button {
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  #directores .cards .card.griffin > button {
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  #directores .cards .card.nikita {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: nikita;
+  }
+  #directores .cards .card.cristian {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: cristian;
+  }
+  #directores .cards .card.cruz {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cruz;
+  }
+  #directores .cards .card.drake {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: drake;
+  }
+  #directores .cards .card.griffin {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: griffin;
+    padding: 2.333333rem 1.6rem 4.2rem 1.6rem;
+  }
+  #directores .cards .card.griffin {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: griffin;
+  }
+  #directores .cards .card.griffin > button {
+    background-color: #79C8C7;
+  }
+  #directores .cards .card.griffin > p.name {
+    margin-bottom: 0.533333rem;
+  }
+  #directores .cards .card.griffin > p.testimonial {
+    line-height: 1.666666rem;
+    font-weight: 600;
+    padding: 0 .333333rem;
+    margin-bottom: 1.6rem;
+  }
+  #directores .cards .card.griffin > .social-cta > img {
+    width: auto;
+  }
+  #directores .cards .card.griffin > .social-cta > img:first-child {
+    margin-right: 1.066666rem;
+  }
+  #directores .cards .card.aden > button {
+    background-color: #F67E7E;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  #contact {
-    padding: 5.066666rem 17.333333rem;
+  #directores {
+    padding: 9.333333rem 11rem 11.2rem 11rem;
   }
-  #contact h2 {
-    font-size: 3.2rem !important;
+  #directores .bg-pattern-about-2 {
+    top: 0rem;
+  }
+  #directores h2 {
+    font-size: 3.2rem;
+    margin-bottom: 4.266666rem;
+  }
+  #directores .cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    row-gap: 5.066666rem;
+        grid-template-areas: "nikita cristian cruz" "drake  griffin  aden";
+  }
+  #directores .cards .card > .name {
+    margin-bottom: 0.5rem;
+  }
+  #directores .cards .card > .position {
+    font-weight: 500;
+    font-style: italic;
+  }
+  #directores .cards .card > button {
+    position: absolute;
+    width: 3.733333rem;
+    height: 3.733333rem;
+    background-color: #F67E7E;
+    border-radius: 100%;
+    border: transparent;
+    bottom: -1.866666rem;
+  }
+  #directores .cards .card > button > img {
+    width: auto;
+  }
+  #directores .cards .card.aden > button {
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  #directores .cards .card.aden > button {
+    background-color: #79C8C7;
+  }
+  #directores .cards .card.griffin > button {
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  #directores .cards .card.nikita {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: nikita;
+  }
+  #directores .cards .card.cristian {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: cristian;
+  }
+  #directores .cards .card.cruz {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: cruz;
+  }
+  #directores .cards .card.drake {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: drake;
+  }
+  #directores .cards .card.griffin {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: griffin;
+    padding: 2.333333rem 1.6rem 4.2rem 1.6rem;
+  }
+  #directores .cards .card.griffin {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: griffin;
+  }
+  #directores .cards .card.griffin > button {
+    background-color: #F67E7E;
+  }
+  #directores .cards .card.griffin > p.name {
+    margin-bottom: 0.533333rem;
+  }
+  #directores .cards .card.aden > p.testimonial {
+    line-height: 1.666666rem;
+    font-weight: 600;
+    padding: 0 1.5rem;
+    margin-bottom: 1.6rem;
+  }
+  #directores .cards .card.griffin > .social-cta > img {
+    width: auto;
+  }
+  #directores .cards .card.griffin > .social-cta > img:first-child {
+    margin-right: 1.066666rem;
+  }
+}
+
+#clients {
+  background-color: #012F34;
+  padding: 5.866666rem 1.6rem;
+  position: relative;
+}
+
+#clients .bg-pattern-about-4 {
+  position: absolute;
+  top: -6.666666rem;
+  left: -6.666666rem;
+  width: auto;
+}
+
+#clients .clients__container h1 {
+  font-size: 2.133333rem;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 4.266666rem;
+}
+
+#clients .clients__container .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#clients .clients__container .logos > img {
+  width: auto;
+}
+
+#clients .clients__container .logos > img:not(:last-child) {
+  margin-bottom: 3.733333rem;
+}
+
+#clients .clients__container .logos > img.the-verge {
+  width: 9.733333rem;
+  height: 1.6rem;
+}
+
+#clients .clients__container .logos > img.jakarta {
+  width: 10.8rem;
+  height: 1.333333rem;
+}
+
+#clients .clients__container .logos > img.guardian {
+  width: 10.666666rem;
+  height: 1.6rem;
+}
+
+#clients .clients__container .logos > img.tech-radar {
+  width: 9.733333rem;
+  height: 1.6rem;
+}
+
+#clients .clients__container .logos > img.gadgets-now {
+  width: 6rem;
+  height: 2.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  #clients {
+    padding: 6.666666rem 2.6rem 7.266666rem 2.6rem;
+  }
+  #clients .bg-pattern-about-4 {
+    top: -6.666666rem;
+    left: 0rem;
+  }
+  #clients .clients__container .logos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #clients .clients__container .logos > img:not(:last-child) {
+    margin-bottom: unset;
+    margin-right: 3.133333rem;
+  }
+  #clients .clients__container .logos > img.the-verge {
+    width: 6.866666rem;
+    height: 1.133333rem;
+  }
+  #clients .clients__container .logos > img.jakarta {
+    width: 7.666666rem;
+    height: 1rem;
+  }
+  #clients .clients__container .logos > img.guardian {
+    width: 7.533333rem;
+    height: 1rem;
+  }
+  #clients .clients__container .logos > img.tech-radar {
+    width: 7.533333rem;
+    height: 1.266666rem;
+  }
+  #clients .clients__container .logos > img.gadgets-now {
+    width: 4.266666rem;
+    height: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #clients {
+    padding: 9.333333rem 11rem;
+  }
+  #clients .bg-pattern-about-4 {
+    top: 0;
+  }
+  #clients .clients__container h1 {
+    font-size: 3.2rem;
+  }
+  #clients .clients__container .logos > img:not(:last-child) {
+    margin-bottom: unset;
+    margin-right: 5.2rem;
+  }
+  #clients .clients__container .logos > img.the-verge {
+    width: 11rem;
+    height: 1.866666rem;
+  }
+  #clients .clients__container .logos > img.jakarta {
+    width: 12.266666rem;
+    height: 1.533333rem;
+  }
+  #clients .clients__container .logos > img.guardian {
+    width: 12.266666rem;
+    height: 1.866666rem;
+  }
+  #clients .clients__container .logos > img.tech-radar {
+    width: 10.8rem;
+    height: 1.866666rem;
+  }
+  #clients .clients__container .logos > img.gadgets-now {
+    width: 6.533333rem;
+    height: 3rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

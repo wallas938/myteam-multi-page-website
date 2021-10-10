@@ -1,0 +1,89 @@
+#about__hero {
+    background-color: $midnight-green;
+    position: relative;
+    padding: 5.333333rem 1.6rem 7.2rem 1.6rem;
+    overflow: clip;
+
+    .bg-pattern-about-1 {
+        position: absolute;
+        bottom: -6.666666rem;
+        right: -6.666666rem;
+        width: auto;
+    }
+
+    h1,
+    p {
+        color: #FFF;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 1.066666rem;
+        font-weight: 700;
+        font-size: 2.666666rem;
+    }
+
+    p {
+        line-height: 1.866666rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: $tablet-min) {
+    #about__hero {
+        padding: 7.466666rem 2.666666rem 7.2rem 2.666666rem;
+
+        .bg-pattern-about-1 {
+            bottom: 0rem;
+        }
+
+        h1 {
+            margin-bottom: 1.6rem;
+            font-weight: 700;
+            font-size: 4.266666rem;
+        }
+
+        p {
+            line-height: 1.866666rem;
+            padding: 0 8rem;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-min) {
+    #about__hero {
+        padding: 8rem 11rem;
+
+        .about__container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1,
+        p {
+            text-align: left;
+        }
+
+        h1 {
+            margin-bottom: 1.6rem;
+            font-weight: 700;
+            font-size: 4.266666rem;
+        }
+
+        p {
+            position: relative;
+            width: 48.666666rem;
+            padding: 2.666666rem 0 0 0;
+            font-size: 1.2rem;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 3.333333rem;
+                height: 0.266666rem;
+                top: 0;
+                left: 0;
+                background-color: $light-coral;
+            }
+        }
+    }
+}

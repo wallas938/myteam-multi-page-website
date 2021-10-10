@@ -1,0 +1,157 @@
+#clients {
+    background-color: $sacramento-state-green;
+    padding: 5.866666rem 1.6rem;
+    position: relative;
+    .bg-pattern-about-4 {
+        position: absolute;
+        top: -6.666666rem;
+        left: -6.666666rem;
+        width: auto;
+    }
+
+    .clients__container {
+
+        h1 {
+            font-size: 2.133333rem;
+            font-weight: 700;
+            color: #FFF;
+            text-align: center;
+            margin-bottom: 4.266666rem;
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logos>img {
+            width: auto;
+        }
+
+        .logos>img:not(:last-child) {
+            margin-bottom: 3.733333rem;
+        }
+
+        .logos>img.the-verge {
+            width: 9.733333rem;
+            height: 1.6rem;
+        }
+
+        .logos>img.jakarta {
+            width: 10.8rem;
+            height: 1.333333rem;
+        }
+
+        .logos>img.guardian {
+            width: 10.666666rem;
+            height: 1.6rem;
+        }
+
+        .logos>img.tech-radar {
+            width: 9.733333rem;
+            height: 1.6rem;
+        }
+
+        .logos>img.gadgets-now {
+            width: 6rem;
+            height: 2.8rem;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-min) {
+    #clients {
+        padding: 6.666666rem 2.6rem 7.266666rem 2.6rem;
+    
+        .bg-pattern-about-4 {
+            top: -6.666666rem;
+            left: 0rem;
+        }
+    
+        .clients__container {
+    
+            .logos {
+                flex-direction: row;
+                justify-content: center;
+            }
+    
+            .logos>img:not(:last-child) {
+                margin-bottom: unset;
+                margin-right: 3.133333rem;
+            }
+    
+            .logos>img.the-verge {
+                width: 6.866666rem;
+                height: 1.133333rem;
+            }
+    
+            .logos>img.jakarta {
+                width: 7.666666rem;
+                height: 1rem;
+            }
+    
+            .logos>img.guardian {
+                width: 7.533333rem;
+                height: 1rem;
+            }
+    
+            .logos>img.tech-radar {
+                width: 7.533333rem;
+                height: 1.266666rem;
+            }
+    
+            .logos>img.gadgets-now {
+                width: 4.266666rem;
+                height: 1.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-min) {
+    #clients {
+        padding: 9.333333rem 11rem;
+    
+        .bg-pattern-about-4 {
+            top: 0;
+        }
+    
+        .clients__container {
+    
+            h1 {
+                font-size: 3.2rem;
+            }
+    
+            .logos>img:not(:last-child) {
+                margin-bottom: unset;
+                margin-right: 5.2rem;
+            }
+    
+            .logos>img.the-verge {
+                width:11rem;
+                height: 1.866666rem;
+            }
+    
+            .logos>img.jakarta {
+                width: 12.266666rem;
+                height: 1.533333rem;
+            }
+    
+            .logos>img.guardian {
+                width: 12.266666rem;
+                height: 1.866666rem;
+            }
+    
+            .logos>img.tech-radar {
+                width: 10.8rem;
+                height: 1.866666rem;
+            }
+    
+            .logos>img.gadgets-now {
+                width: 6.533333rem;
+                height: 3rem;
+            }
+        }
+    }
+}
