@@ -1,0 +1,30 @@
+#contact__main {
+    background-color: $midnight-green;
+    padding: 0 1.6rem 5.866666rem 1.6rem;
+    overflow: clip;
+    position: relative;
+    .contact__main-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: $tablet-min) {
+    #contact__main {
+        padding: 0 7.533333rem 0 7.533333rem;
+    }
+}
+
+@media screen and (min-width: $desktop-min) {
+    #contact__main {
+        padding: 8rem 11rem;
+        
+        
+        .contact__main-container {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+    }
+}

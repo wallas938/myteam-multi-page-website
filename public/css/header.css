@@ -63,14 +63,16 @@ header nav ul li.icon-humberger {
   header nav li.about {
     margin-right: 14.666666rem;
   }
-  header nav li.contact-us > button {
-    background-color: transparent;
-    border: 2px solid #FFF;
+  header nav li.contact-us > a > button {
     font-weight: 600;
-    border-radius: 1.6rem;
     font-size: 1.2rem;
     line-height: 28px;
-    padding: 0.6rem 2.133333rem 0.733333rem 2.2rem;
+    border-radius: 1.6rem;
+    border: none;
+    padding: 0.6rem 2.2rem 0.733333rem 2.133333rem;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    pointer-events: all;
   }
 }
 
@@ -100,15 +102,6 @@ header nav ul li.icon-humberger {
   header nav * li.contact-us {
     -ms-flex-item-align: end;
         align-self: flex-end;
-  }
-  header nav li.contact-us > button {
-    background-color: transparent;
-    border: 2px solid #FFF;
-    font-weight: 600;
-    border-radius: 1.6rem;
-    font-size: 1.2rem;
-    line-height: 28px;
-    padding: 0.6rem 2.133333rem 0.733333rem 2.2rem;
   }
 }
 /*# sourceMappingURL=header.css.map */

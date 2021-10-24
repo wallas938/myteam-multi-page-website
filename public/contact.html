@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="http://127.0.0.1:5500/public/"> <!-- For DEV -->
+  <!-- <base href="https://wallas938.github.io/myteam-multi-page-website/public/"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Frontend Mentor | myteam website challenge - Contact</title>
+</head>
+
+<body style="display: flex; flex-direction: column">
+  <header>
+    <nav>
+      <ul>
+        <li class="logo">
+          <a href="#">
+            <img src="assets/logo.svg" alt="logo">
+          </a>
+        </li>
+        <li class="hide-for-mobile home"><a href="index.html">home</a></li>
+        <li class="hide-for-mobile about"><a href="about.html">about</a></li>
+        <li class="hide-for-mobile contact-us">
+          <a href="contact.html"><button>contact us</button></a>
+        </li>
+        <li class="hide-for-tablet-and-desktop icon-humberger">
+          <img src="assets/icon-hamburger.svg" alt="humberger icon">
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="contact__main">
+    <div class="contact__main-container container">
+      <section id="contact">
+        <div class="contact-container container">
+          <div class="contact__text">
+            <img class="bg-pattern-contact-1 hide-for-mobile" src="assets/bg-pattern-about-2-contact-1.svg" alt="">
+            <div class="text__titles">
+              <h1>Contact</h1>
+              <h2>Ask us about</h2>
+            </div>
+            <div class="text__questions">
+              <div>
+                <img src="assets/icon-person.svg" alt="person icon">
+                <p>The quality of our talent network</p>
+              </div>
+              <div>
+                <img src="assets/icon-cog.svg" alt="cog icon">
+                <p>Usage & implementation of our software</p>
+              </div>
+              <div>
+                <img src="assets/icon-chart.svg" alt="chart icon">
+                <p>How we help drive innovation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="formulaire">
+        <img src="assets/bg-pattern-contact-2.svg" class="bg-pattern-contact-2" alt="" srcset="">
+        <div class="formulaire-container container">
+          <form action="#">
+              <!-- <label for="name">Name</label> -->
+              <input class="input name" placeholder="Name" type="text" name="name" id="name">
+              <!-- <label for="email">Email Address</label> -->
+              <input class="input email" placeholder="Email Address" type="text" name="email" id="email">
+              <!-- <label for="company">Company Name</label> -->
+              <input class="input company" placeholder="Company Name" type="text" name="company" id="company">
+              <!-- <label for="title">Title</label> -->
+              <input class="input title" placeholder="Title" type="text" name="title" id="title">
+              <!-- <label for="message">Message</label> -->
+              <textarea class="input message" placeholder="Message" style="resize: none;" name="message" id="message"></textarea>
+            <div class="form-cta">
+              <button>submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer__container">
+      <img src="assets/logo.svg" alt="the site logo">
+      <ul class="links">
+        <li class="link">home</li>
+        <li class="link">about</li>
+      </ul>
+      <address>
+        <p>987 Hillcrest Lane</p>
+        <p>Irvine, CA</p>
+        <p>California 92714</p>
+        <p>Call Us : 949-833-7432</p>
+      </address>
+      <div class="socials"><img src="assets/icon-facebook.svg" alt="facebook"><img src="assets/icon-pinterest.svg" alt="pinterest"><img src="assets/icon-twitter.svg" alt="twitter"></div>
+      <p class="copyright">Copyright 2020. All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>

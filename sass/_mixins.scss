@@ -9,3 +9,13 @@
         @content;
     }
 }
+
+@mixin mmp-button {
+    // my multi page 
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 28px;
+    border-radius: 1.6rem;
+    border: none;
+    padding: 0.6rem 2.2rem 0.733333rem 2.133333rem;
+}

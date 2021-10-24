@@ -1,5 +1,6 @@
 @import '../colors';
 @import '../variables';
+@import '../mixins';
 
 header {
     background-color: $midnight-green;
@@ -55,14 +56,11 @@ header {
                 margin-right: 14.666666rem;
             }
 
-            li.contact-us>button {
-                background-color: transparent;
+            li.contact-us>a>button {
+                @include mmp-button;
                 border: 2px solid #FFF;
-                font-weight: 600;
-                border-radius: 1.6rem;
-                font-size: 1.2rem;
-                line-height: 28px;
-                padding: 0.6rem 2.133333rem 0.733333rem 2.2rem;
+                background-color: transparent;
+                pointer-events: all;
             }
         }
     }
@@ -94,16 +92,6 @@ header {
 
             * li.contact-us {
                 align-self: flex-end;
-            }
-
-            li.contact-us>button {
-                background-color: transparent;
-                border: 2px solid #FFF;
-                font-weight: 600;
-                border-radius: 1.6rem;
-                font-size: 1.2rem;
-                line-height: 28px;
-                padding: 0.6rem 2.133333rem 0.733333rem 2.2rem;
             }
 
             //// !!!!!! Faire vrai header responsive.. ////

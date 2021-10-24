@@ -1,0 +1,133 @@
+#contact {
+    overflow: clip;
+    background-color: $midnight-green;
+    /* padding: 5.333333rem 1.6rem 0 1.6rem; */
+    padding-left: 1.066666rem;
+    .contact__text {
+
+        h1,
+        h2 {
+            text-align: center;
+            font-weight: 700;
+        }
+
+        h1 {
+            color: #FFF;
+            font-size: 2.666666rem;
+            margin-bottom: 1.066666rem;
+        }
+
+        h2 {
+            color: $light-coral;
+            font-size: 2.133333rem;
+            margin-bottom: 2.666666rem;
+        }
+    }
+
+    .text__questions {
+
+        &>div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.6rem;
+        }
+
+        &>div>img {
+            width: 4.8rem;
+            height: 4.8rem;
+            margin-right: 1.533333rem;
+        }
+
+        &>div>p {
+            font-size: 1.2rem;
+            color: #FFF;
+            font-weight: 700;
+            line-height: 1.866666rem;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-min) {
+    #contact {
+        /* padding: 7.466666rem 8.466666rem 0 8.466666rem; */
+        position: unset;
+
+        .bg-pattern-contact-1 {
+            position: absolute;
+            top: unset;
+            left: -6.666666rem;
+            width: auto;
+        }
+
+        .contact__text {
+
+            h1,
+            h2 {
+                margin-bottom: 1.6rem;
+            }
+
+            h1 {
+                font-size: 4.266666rem;
+            }
+
+            h2 {
+                font-size: 2.133333rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop-min) {
+    #contact {
+        padding: unset;
+        /* padding: 8rem 11rem 8rem 11re */
+        ;
+        position: unset;
+        height: 29.333333rem;
+
+        .bg-pattern-contact-1 {
+            position: absolute;
+            top: 8.266666rem;
+            left: -6.666666rem;
+            width: auto;
+        }
+
+        .contact__text {
+
+            h1,
+            h2 {
+                text-align: left;
+            }
+
+            h1 {
+                font-size: 4.266666rem;
+            }
+
+            h2 {
+                font-size: 2.133333rem;
+                margin-bottom: 2.133333rem;
+            }
+        }
+
+        .text__questions {
+            &>div {
+                margin-bottom: 0.533333rem;
+            }
+
+            &>div:last-child {
+                margin-bottom: 0;
+            }
+
+            &>div>img {
+                margin-right: 1.533333rem;
+            }
+
+            &>div>p {
+                font-size: 1.2rem;
+                color: #FFF;
+                font-weight: 700;
+                line-height: 1.866666rem;
+            }
+        }
+    }
+}
