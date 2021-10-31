@@ -1,0 +1,67 @@
+@import '../colors';
+@import '../variables';
+@import '../mixins';
+
+.modals-backdrop,
+.menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.modals-backdrop {
+    background-color: rgba($color: #000, $alpha: .6);
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+.menu {
+    background-color: $police-blue;
+    z-index: 2;
+    width: 17rem;
+    flex-direction: column;
+    padding: 3.7323333rem 3.2rem;
+    overflow: clip;
+    transition: right 300ms ease-in;
+
+    .icon-close {
+        text-align: end;
+        margin-bottom: 2.6rem;
+        cursor: pointer;
+    }
+
+    .icon-close>img {
+        width: 1.2rem;
+        height: 1.133333rem;
+    }
+
+    ul {
+        margin-bottom: 2.4rem;
+    }
+
+    ul>li {
+        font-size: 1.2rem;
+        line-height: 28px;
+        font-weight: 600;
+        color: #FFF;
+    }
+
+    ul>li:first-child {
+        margin-bottom: 1.6rem;
+    }
+
+    div.menu-cta>button {
+        @include mmp-button;
+        background-color: transparent;
+        border: 2px solid #FFF;
+        color: #FFF;
+    }
+
+    img.bg-pattern-about-1-mobile-nav-1 {
+        position: absolute;
+        bottom: 0;
+        right: -6.666666rem;
+        width: auto;
+    }
+}

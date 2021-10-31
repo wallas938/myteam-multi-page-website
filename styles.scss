@@ -6,6 +6,7 @@
 @import 'sass/global';
 
 // Shared
+@import 'sass/shared/menu';
 @import 'sass/shared/header';
 @import 'sass/shared/footer';
 @import 'sass/shared/get-started';
@@ -15,7 +16,7 @@
 @import 'sass/partials/index/features';
 @import 'sass/partials/index/stories';
 
-// About Partials 
+// About Partials
 @import 'sass/partials/about/about';
 @import 'sass/partials/about/directores';
 @import 'sass/partials/about/clients';

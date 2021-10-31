@@ -4,25 +4,29 @@
 // For responsive
 
 .hide-for-mobile {
-    @include breakpoint-up($mobile-min, $mobile-max) { // 375px => 767px
+    @include breakpoint-up($mobile-min, $mobile-max) {
+        // 375px => 767px
         display: none !important;
     }
 }
 
 .hide-for-tablet {
-    @include breakpoint-up($tablet-min, $tablet-max) { // 768px => 1439px
+    @include breakpoint-up($tablet-min, $tablet-max) {
+        // 768px => 1439px
         display: none !important;
     }
 }
 
 .hide-for-desktop {
-    @include breakpoint-up($desktop-min, $desktop-max) { // 1440px => 2440px
+    @include breakpoint-up($desktop-min, $desktop-max) {
+        // 1440px => 2440px
         display: none !important;
     }
 }
 
 .hide-for-tablet-and-desktop {
-    @include breakpoint-up($tablet-min, $desktop-max) { // 375px => 767px
+    @include breakpoint-up($tablet-min, $desktop-max) {
+        // 375px => 767px
         display: none;
     }
 }
@@ -37,4 +41,14 @@
 
 .hide {
     display: none;
+}
+
+/** Aniamtion **/
+
+.slide-out {
+    right: -17rem;
+}
+
+.slide-in {
+    right: 0;
 }

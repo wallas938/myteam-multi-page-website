@@ -27,9 +27,10 @@ header nav ul li.logo {
   height: 2.133333rem;
 }
 
-header nav ul li.icon-humberger {
+header nav ul li.icon-hamburger {
   width: 1.333333rem;
   height: 1.133333rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
