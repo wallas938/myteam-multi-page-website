@@ -1,0 +1,68 @@
+/* Devices sizes */
+/* Layout values */
+#get-started {
+  background-color: #F67E7E;
+  padding: 5.533333rem 1.6rem;
+  position: relative;
+  z-index: 0;
+  overflow-y: hidden;
+}
+
+#get-started .bg-pattern-6 {
+  position: absolute;
+  width: auto;
+  bottom: -1.5rem;
+  left: 0;
+  z-index: -1;
+}
+
+#get-started .get-started__container {
+  text-align: center;
+}
+
+#get-started .get-started__container h2 {
+  font-size: 2.133333rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+#get-started .get-started__container button {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 28px;
+  border-radius: 1.6rem;
+  border: 2px solid black;
+  background-color: transparent;
+  padding: 0.6rem 2.2rem 0.733333rem 2.133333rem;
+}
+
+@media screen and (min-width: 768px) {
+  #get-started {
+    padding: 5.066666rem 6.466666rem;
+  }
+  #get-started .get-started__container {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  #get-started .get-started__container h2 {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #get-started {
+    padding: 5.066666rem 17.333333rem;
+  }
+  #get-started h2 {
+    font-size: 3.2rem !important;
+  }
+}
+/*# sourceMappingURL=get-started.css.map */

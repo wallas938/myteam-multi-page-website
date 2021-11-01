@@ -21,17 +21,17 @@ function toggleMenu() {
         backdrop.classList.remove('hide');
         backdrop.classList.add('show-block');
         htmlTag.style.overflow = "hidden";
-        setTimeout(function() {
+        setTimeout(function () {
             menu.classList.add('slide-in');
             menu.classList.remove('slide-out');
         }, 0);
         return;
     }
     open = false;
-    menu.classList.add('hide');
-    backdrop.classList.add('hide')
+    backdrop.classList.add('hide');
     menu.classList.remove('show-flex');
-    setTimeout(function() {
+    menu.classList.add('hide');
+    setTimeout(function () {
         menu.classList.remove('slide-in');
         menu.classList.add('slide-out');
     }, 0);
